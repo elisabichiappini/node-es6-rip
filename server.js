@@ -89,5 +89,15 @@ class Genio {
 };
 
 const geniusss = new Genio();
+console.log(`mi chiamo ${geniusss.nome} ${geniusss.cognome} e ho la bellezza di ${geniusss.age} anni`);
 
-console.log(`mi chiamo ${geniusss.nome} ${geniusss.cognome} e ho la bellezza di ${geniusss.age} anni`)
+
+class Costumer extends Genio {
+    salary = 1000;
+    setSalary(salary) {
+        this.salary = salary;
+    }
+}
+
+const c = new Costumer ();
+console.log(c);
