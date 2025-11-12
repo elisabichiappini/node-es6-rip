@@ -82,3 +82,12 @@ const b = new SuperUser('Sara', 'Davanzo', 40);
 a.sayHi();
 b.sayHi();
 
+class Genio {
+    nome = 'Savana';
+    cognome = "Tropicale";
+    age = 11
+};
+
+const geniusss = new Genio();
+
+console.log(`mi chiamo ${geniusss.nome} ${geniusss.cognome} e ho la bellezza di ${geniusss.age} anni`)
