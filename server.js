@@ -117,3 +117,4 @@ const d = new PowerMan();
 d.salary= 2000;
 console.log(d);
 console.log(d.salary);
+
