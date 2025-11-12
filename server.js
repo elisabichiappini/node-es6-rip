@@ -42,3 +42,42 @@ if(age) {
     //non viene eseguito perchè null con undefined non ha valore di tipo
     console.log('questo utente non ha un\'eta precisa');
 }
+
+//operatore ternario
+let nome1 = 'Mario';
+console.log(nome1.startsWith('Ma') ? 'Il nome corrisponde' : 'Il nome non ha corrispondenza');
+
+//classi
+class User {
+    constructor(nome = 'Elisa', cognome = 'Chiappini', age = 35 ){
+    this.nome = nome;
+    this.cognome = cognome;
+    this.age = age;
+}
+sayHi(){
+    console.log(`ciao sono ${this.nome} ${this.cognome} e ho ${this.age} anni`)
+    }
+}
+
+const utente = new User();
+const utente1 = new User('Sara', 'Davanzo', 40);
+
+utente.sayHi();
+utente1.sayHi();
+
+class superUser {
+    constructor(nome, cognome, age){
+    this.nome = nome;
+    this.cognome = cognome;
+    this.age = age;
+}
+sayHi(){
+    console.log(`ciao sono ${this.nome} ${this.cognome} e ho ${this.age} anni`)
+    }
+}
+
+const a = new User('Giovanni', 'Rosa', 90);
+const b = new User('Sara', 'Davanzo', 40);
+
+a.sayHi();
+b.sayHi();
