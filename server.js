@@ -65,7 +65,7 @@ const utente1 = new User('Sara', 'Davanzo', 40);
 utente.sayHi();
 utente1.sayHi();
 
-class superUser {
+class SuperUser {
     constructor(nome, cognome, age){
     this.nome = nome;
     this.cognome = cognome;
@@ -76,8 +76,9 @@ sayHi(){
     }
 }
 
-const a = new User('Giovanni', 'Rosa', 90);
-const b = new User('Sara', 'Davanzo', 40);
+const a = new SuperUser('Giovanni', 'Rosa', 90);
+const b = new SuperUser('Sara', 'Davanzo', 40);
 
 a.sayHi();
 b.sayHi();
+
