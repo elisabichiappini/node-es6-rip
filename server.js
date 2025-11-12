@@ -23,3 +23,22 @@ const filtro = (array) => {
     return pari;
 }
 console.log(filtro(numeri));
+
+//truthly
+let nome = 'Elisa';
+let price = 0;
+let age = null;
+
+if(nome) {
+    //viene eseguito perchè la stringa per essere vera deve non essere vuota
+    console.log(`Il nostro personaggio ha un nome: ${nome}`);
+}
+if(price) {
+    //non viene eseguito perchè 0 non è un valore numerico
+    console.log(`il nostro personaggio ha acquistato una mela a ${price} €`)
+}
+
+if(age) {
+    //non viene eseguito perchè null con undefined non ha valore di tipo
+    console.log('questo utente non ha un\'eta precisa');
+}
