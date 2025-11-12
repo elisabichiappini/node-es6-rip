@@ -101,3 +101,19 @@ class Costumer extends Genio {
 
 const c = new Costumer ();
 console.log(c);
+
+//getter e setter
+class PowerMan extends User {
+    #salary = 0;
+    getSalary() {
+        return this.#salary;
+    };
+    setSalary() {
+        this.#salary = salary;
+    }
+}
+
+const d = new PowerMan();
+d.salary= 2000;
+console.log(d);
+console.log(d.salary);
