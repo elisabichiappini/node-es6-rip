@@ -16,3 +16,10 @@ const multipli = (array) => {
     return array.map((element) => element*element);
 }
 console.log(multipli(numeri));
+
+//filter
+const filtro = (array) => {
+    const pari = array.filter(element => element % 2 ===0);
+    return pari;
+}
+console.log(filtro(numeri));
